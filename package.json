@@ -1,0 +1,34 @@
+{
+  "name": "react-1",
+  "version": "1.0.0",
+  "description": "react start up with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinkumarrath/react-1.git"
+  },
+  "author": "sachin rath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachinkumarrath/react-1/issues"
+  },
+  "homepage": "https://github.com/sachinkumarrath/react-1#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^1.12.12"
+  }
+}
