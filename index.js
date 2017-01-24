@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Hello from './src/hello';
 
-console.log('hi');
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <Hello />,
   document.getElementById('root')
 );
