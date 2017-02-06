@@ -6,6 +6,18 @@ export default class Hello extends React.Component{
   }
 
   render(){
-    return (<h1>Hello, world!</h1>);
+      console.log('age is : '+this.props.age);
+      return (<h1>Hello, {this.props.name}!</h1>);
+  }
+
+  componentDidUpdate(prevProps, prevState){
+      console.log('age inside componentDidUpdate : ');
+  }
+
+  shouldComponentUpdate(nextProps, nextState){
+      if(this.props.name === nextProps.name){
+          return false;
+      }
+      return true;
   }
 }

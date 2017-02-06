@@ -22,7 +22,8 @@
   "homepage": "https://github.com/sachinkumarrath/react-1#readme",
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
