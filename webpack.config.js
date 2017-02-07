@@ -3,7 +3,7 @@ module.exports = {
   output : {
     filename : "./build/build.js"
   },
-  watch : false,
+  watch : true,
   module: {
     loaders: [
       {
@@ -12,5 +12,9 @@ module.exports = {
         loader: "babel-loader"
       }
     ]
-  }
+    },
+    devServer: {
+      port: 9000,
+      watchContentBase: true
+    }
 }
