@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Base from './src/baseContainer';
-// import { Router, Route, Link } from 'react-router';
+import { Router, Route, Link, hashHistory} from 'react-router';
 
-// const routeApp = (
-//     <Router>
-//         <Route path="/pages" component={Base}/>
-//     </Router>
-//  );
+const routeApp = (
+    <Router history={hashHistory}>
+        <Route path="/" component={Base}/>
+    </Router>
+ );
 
 ReactDOM.render(
-  <Base/>,
+  routeApp,//<Base/>,
   document.getElementById('root'),
   completionReactLoad
 );
