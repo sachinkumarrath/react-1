@@ -10,7 +10,7 @@ export default class Base extends React.Component{
   constructor(){
     super();
     this.state = {
-        name : "sachin",
+        name : "sachin1",
         messageBox : "",
         charLeft : 500
     };
@@ -27,14 +27,12 @@ export default class Base extends React.Component{
   }
 
   render(){
-      const flagStyleProps = {background : "url('./images/us.png')"};
       return (<div className="base-container">
                 <Hello name={this.state.name} age="30"/>
                 <MessageBoard placeHolder="Write your thoughts"
                     calculateMessgaeLength={this.calculateMessgaeLength}/>
                 <span>{this.state.charLeft} characters left</span>
                 <PostMessage messageBox={this.state.messageBox} />
-                <div style={flagStyleProps}></div>
                 <div className="flag-span"></div>
                 <PlaceSearch/>
             </div>);
